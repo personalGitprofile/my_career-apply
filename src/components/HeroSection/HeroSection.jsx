@@ -2,7 +2,7 @@
 
 const HeroSection = () => {
     return (
-        <div className="hero bg-white w-10/12 mx-auto">
+        <div className="hero bg-white w-10/12 mx-auto ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src="https://png.pngtree.com/png-clipart/20231104/original/pngtree-corporate-man-showing-thumbs-up-adult-picture-image_13232627.png"

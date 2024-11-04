@@ -1,4 +1,5 @@
 import HeroSection from "../HeroSection/HeroSection";
+import JobCatagory from "../JobCatagory/JobCatagory";
 
 
 
@@ -6,7 +7,10 @@ const Home = () => {
     return (
         
       
-      <HeroSection></HeroSection>
+      <div>
+           <HeroSection></HeroSection>
+           <JobCatagory></JobCatagory>
+   </div>
     );
 };
 
