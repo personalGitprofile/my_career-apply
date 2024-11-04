@@ -10,22 +10,29 @@ const JobDetils = () => {
     const job = jobs.find(job => job.id === idInt)
     // This is important to me!
     console.log(job)
+    const { job_title, company_name, educational_requirements, experiences, job_description
+        ,job_responsibility,location,remote_or_onsite,salary,logo
+    }=job
     return (
         <div>
-            <div className="bg-[url('https://i.ibb.co.com/WPC4ZJh/bg1.png')] bg-no-repeat h-3/6 py-10 bg-center text-center ">
-                <h1 className="text-2xl font-extrabold">Job Details</h1>
-                <hr className="w-3/12 mx-auto mt-2  border-slate-950 h-2 border-double "/>
-            </div>
-            <div>
-                <div>
-                    <h1>Details</h1>
+            <h1 className="text-center pb-48 pt-10 text-xl font-extrabold text-cyan-900">Job Details</h1>
+             <div className="grid grid-cols-3 gap-7 mx-32 ">
+            <div className="col-span-2 ">
+                <h1 className="text-center text-3xl py-16 font-medium text-blue-900">{job_title}</h1>
+                    <div>
+                        <p className="pb-9"><span className="font-bold">Job Description:</span> {job_description }</p>
+                        <p className="pb-9"><span className="font-bold">Job Responsibility:</span> {job_responsibility }</p>
+                        <p className="pb-9"><span className="font-bold">Educational Requirements:</span> {educational_requirements }</p>
+                </div>
+                
 
-                </div>
-                <div>
-                    <h1>side details</h1>
-                </div>
+            </div>
+            <div className="bg-slate-500">
+                <p>Right</p>
             </div>
         </div>
+       </div>
+            
     );
 };
 
