@@ -1,5 +1,6 @@
 import HeroSection from "../HeroSection/HeroSection";
 import JobCatagory from "../JobCatagory/JobCatagory";
+import JobsFeatured from "../JobsFeatured/JobsFeatured";
 
 
 
@@ -9,7 +10,9 @@ const Home = () => {
       
       <div>
            <HeroSection></HeroSection>
-           <JobCatagory></JobCatagory>
+        <JobCatagory></JobCatagory>
+        <JobsFeatured></JobsFeatured>
+        
    </div>
     );
 };
