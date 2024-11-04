@@ -8,9 +8,9 @@ const Job = ({ job }) => {
             <img src={logo} alt="" />
             <h1>{ job_title}</h1>
             <h1>{company_name}</h1>
-            <div className="flex text-sm">
-                <h5 className="pr-3">{remote_or_onsite}</h5>
-                <h5>{job_type}</h5>
+            <div className="flex gap-4 text-sm py-2">
+                <h5 className="pr-3 border border-indigo-700 px-5 py-1 rounded-md">{remote_or_onsite}</h5>
+                <h5 className="pr-3 border border-indigo-700 px-5 py-1 rounded-md">{job_type}</h5>
                 
             </div>
             <div className="flex text-xs ">

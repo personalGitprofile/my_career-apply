@@ -104,7 +104,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <Link to="/">
+        <Link to="/jobs">
           <button className="btn bg-gradient-to-r from-violet-600 to-indigo-600 text-white">
             Start Appling
           </button>
