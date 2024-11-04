@@ -2,14 +2,14 @@
 
 const HeroSection = () => {
     return (
-        <div className="hero bg-base-200 min-h-screen">
+        <div className="hero bg-white w-10/12 mx-auto">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl" />
+            src="https://png.pngtree.com/png-clipart/20231104/original/pngtree-corporate-man-showing-thumbs-up-adult-picture-image_13232627.png"
+            className="max-w-md rounded-lg  " />
           <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
+            <h1 className="text-7xl font-bold pt-3 space-x-3">Let's Get Your <span className="block bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">Dream Job</span></h1>
+            <p className="py-6 font-mono w-4/5">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
               quasi. In deleniti eaque aut repudiandae et a id nisi.
             </p>

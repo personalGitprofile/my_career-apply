@@ -10,7 +10,7 @@ const Navbar = () => {
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-bold" // Active link styles
+              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
               : "text-gray-500"
           }
         >
@@ -22,7 +22,7 @@ const Navbar = () => {
           to="/statistics"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-bold" // Active link styles
+              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
               : "text-gray-500"
           }
         >
@@ -34,7 +34,7 @@ const Navbar = () => {
           to="/jobs"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-bold" // Active link styles
+              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
               : "text-gray-500"
           }
         >
@@ -46,7 +46,7 @@ const Navbar = () => {
           to="/applied"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-bold" // Active link styles
+              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
               : "text-gray-500"
           }
         >
@@ -58,7 +58,7 @@ const Navbar = () => {
           to="/blogs"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-bold" // Active link styles
+              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
               : "text-gray-500"
           }
         >
@@ -69,7 +69,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 w-11/12 mx-auto">
+    <div  className="bg-[url('https://i.ibb.co.com/WPC4ZJh/bg1.png')] bg-no-repeat">
+       <div className="navbar w-10/12   mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -110,6 +111,7 @@ const Navbar = () => {
         </Link>
       </div>
     </div>
+   </div>
   );
 };
 
