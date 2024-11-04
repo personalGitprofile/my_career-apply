@@ -16,8 +16,9 @@ const JobDetils = () => {
     return (
         <div>
             <h1 className="text-center pb-48 pt-10 text-xl font-extrabold text-cyan-900">Job Details</h1>
-             <div className="grid grid-cols-3 gap-7 mx-32 ">
-            <div className="col-span-2 ">
+             <div className="grid grid-cols-3 gap-7 mx-32 mb-7">
+                <div className="col-span-2 ">
+                    <img className="mx-auto" src={ logo} alt="" />
                 <h1 className="text-center text-3xl py-16 font-medium text-blue-900">{job_title}</h1>
                     <div>
                         <p className="pb-9"><span className="font-bold">Job Description:</span> {job_description }</p>
