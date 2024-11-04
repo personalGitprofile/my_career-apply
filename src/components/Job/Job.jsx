@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Job = ({ job }) => {
-    const {company_name,logo,job_title,job_type,remote_or_onsite,salary,location}=job
+    const {id,company_name,logo,job_title,job_type,remote_or_onsite,salary,location}=job
     return (
         <div className="border p-6 rounded">
             <img src={logo} alt="" />
@@ -23,7 +23,7 @@ const Job = ({ job }) => {
                 <p className="mt-0.5 ">{ salary}</p>
           </div>
             </div>
-            <Link to=''>
+            <Link to={`/job/${id}`}>
                 <button className="btn mt-3 p-2 rounded-md font-medium text-white bg-gradient-to-r from-[#7045e6fd]  to-[#9873ff]">
                     View Details</button></Link>
         </div>
