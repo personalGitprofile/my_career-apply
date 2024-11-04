@@ -22,7 +22,7 @@ const JobsFeatured = () => {
      }
             </div>
             <div className="text-center pb-10">
-               <Link><p className="btn btn-primary px-8 bg-gradient-to-r from-violet-600 to-indigo-600 text-white shadow-2xl">See more ➾</p></Link> 
+               <Link to='/jobs'><p className="btn btn-primary px-8 bg-gradient-to-r from-violet-600 to-indigo-600 text-white shadow-2xl">See more ➾</p></Link> 
      </div>
         </div>
     );
