@@ -17,7 +17,7 @@ const JobDetils = () => {
     } = job
     
     const handleApplyJob = () => {
-        saveJobApplication(id)
+        saveJobApplication(idInt)
         toast(`Applied ${company_name} Job Succesfully `)
     }
     return (
