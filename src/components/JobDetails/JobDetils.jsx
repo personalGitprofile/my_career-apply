@@ -1,5 +1,7 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from "../utility/localStorage";
 
 const JobDetils = () => {
     // This is important to me!
@@ -11,8 +13,13 @@ const JobDetils = () => {
     // This is important to me!
     console.log(job)
     const { job_title, company_name, educational_requirements, experiences, job_description
-        ,job_responsibility,location,remote_or_onsite,salary,logo,contact_information
-    }=job
+        ,job_responsibility,location,remote_or_onsite,salary,logo,contact_information,job_type
+    } = job
+    
+    const handleApplyJob = () => {
+        saveJobApplication(id)
+        toast(`Applied ${company_name} Job Succesfully `)
+    }
     return (
         <div>
             <h1 className="text-center pb-48 pt-10 text-xl font-extrabold text-cyan-900">Job Details</h1>
@@ -24,7 +31,8 @@ const JobDetils = () => {
                         <p className="pb-9"><span className="font-bold">Job Description:</span> {job_description }</p>
                         <p className="pb-9"><span className="font-bold">Job Responsibility:</span> {job_responsibility }</p>
                         <p className="pb-9"><span className="font-bold">Educational Requirements:</span> {educational_requirements }</p>
-                        <p className="pb-9"><span className="font-bold">Experiences::</span> {experiences }</p>
+                        <p className="pb-9"><span className="font-bold">Experiences:</span> {experiences }</p>
+                        <p className="pb-9"><span className="font-bold">Job Type:</span> {remote_or_onsite} & { job_type}</p>
                 </div>
                 
 
@@ -62,9 +70,11 @@ const JobDetils = () => {
                         </div>
                     </div>
                     </div>
-                   <Link><p className="text-center mt-3"> <button className="btn bg-cyan-800 text-white px-12 ">Apply</button></p></Link>
+                    <p className="text-center mt-3">
+                        <button onClick={handleApplyJob} className="btn bg-cyan-800 text-white px-12 ">Apply</button></p>
           </div>
-        </div>
+            </div>
+            <ToastContainer />
        </div>
             
     );
