@@ -55,7 +55,7 @@ console.log(`my amount ${applyAmount.length}`)
               : "text-gray-500"
           }
         >
-          Applied Jobss <span className="indicator-item badge bg-indigo-400 text-white text-xs ">{applyAmount.length}</span>
+          Applied Jobss <span className="indicator-item badge bg-indigo-400 text-white text-xs absolute ">{applyAmount.length}</span>
         </NavLink>
       </li>
       <li>
