@@ -1,6 +1,11 @@
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLoaderData } from "react-router-dom";
+import { getStoredJobApplication } from "../utility/localStorage";
 
 const Navbar = () => {
+
+  const applyAmount = getStoredJobApplication();
+console.log(`my amount ${applyAmount.length}`)
 
 //   Navbar Link with active css
     const links = (
@@ -41,7 +46,7 @@ const Navbar = () => {
           Jobs
         </NavLink>
       </li>
-      <li>
+      <li className="indicator">
         <NavLink
           to="/applied"
           className={({ isActive }) =>
@@ -50,7 +55,7 @@ const Navbar = () => {
               : "text-gray-500"
           }
         >
-          Applied Jobs
+          Applied Jobss <span className="indicator-item badge bg-indigo-400 text-white text-xs ">{applyAmount.length}</span>
         </NavLink>
       </li>
       <li>
@@ -62,7 +67,7 @@ const Navbar = () => {
               : "text-gray-500"
           }
         >
-          Blogs
+            Blogs
         </NavLink>
       </li>
     </>
@@ -88,7 +93,8 @@ const Navbar = () => {
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
-          </div>
+            </div>
+            {/* -------------------- */}
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
@@ -100,7 +106,8 @@ const Navbar = () => {
           My Career Hunt
         </a></Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex">
+          {/* --------------------------- */}
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
